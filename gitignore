@@ -1,24 +1,35 @@
 # Java
-/target
 *.class
 *.jar
 *.war
-*.log
-
-# React / Node
-node_modules/
-build/
-dist/
-
-# Environment
-.env
-.env.local
-
-# IDE
-.idea/
-.vscode/
 *.iml
+
+# Maven
+/target/
+!.mvn/wrapper/maven-wrapper.jar
+
+# IntelliJ
+.idea/
+*.iws
+*.ipr
+*.iml
+
+# Logs
+*.log
 
 # OS
 .DS_Store
 Thumbs.db
+
+# Node
+node_modules/
+build/
+dist/
+.env
+
+# H2
+*.mv.db
+*.trace.db
+
+# VSCode
+.vscode/
