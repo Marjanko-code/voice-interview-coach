@@ -1,20 +1,54 @@
-# voice-interview-coach
+# 🎤 Voice Interview Coach
 
-AI-powered interview simulator with voice input, real-time scoring, and role-specific question sets.
+AI-powered **interview simulator** with voice input, real-time scoring, and role-specific dynamic question sets.
 
-## 🛠 Tech Stack
-- Java 17 / Spring Boot 3
-- React / TailwindCSS
+---
+
+## 🔍 Overview
+
+This project aims to help users prepare for job interviews by simulating voice-based conversations with an AI-powered interview coach. It uses:
+- AI (planned integration with OpenAI)
+- Web Speech API for voice input
+- Tailored interview questions by role
+- Real-time answer recording and (planned) scoring
+
+---
+
+## 📄 Screenshots
+
+### Dashboard (Planned)
+![Dashboard Preview](./screenshots/dashboard-preview.png)
+
+### Voice Interview Screen (Planned)
+![Voice Interview](./screenshots/voice-interview.png)
+
+> *Note: Screenshots will be added once frontend implementation is complete.*
+
+---
+
+## 💪 Tech Stack
+
+**Backend:**
+- Java 17
+- Spring Boot 3
+- Spring Security (InMemory auth)
+- Hibernate / JPA
+- MariaDB (H2 for development)
+
+**Frontend:**
+- React
+- Tailwind CSS
 - Web Speech API
+
+**Integrations (Planned):**
 - OpenAI API
-- MariaDB
 
-## 📦 Status
-Private repo under active development. Will be made public after deployment.
+---
 
-## 🔐 Note
-This is a private repository during development. It will be made public with:
-- Full README
-- Screenshots or Demo
-- Deployment link
-- Appropriate license
+## 🚀 Getting Started
+
+### Backend (Spring Boot)
+```bash
+cd backend
+./mvnw spring-boot:run
+
