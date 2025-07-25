@@ -9,7 +9,7 @@ public class Answer {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String text;
+    private String response;
 
     @ManyToOne
     @JoinColumn(name = "question_id")
@@ -17,17 +17,18 @@ public class Answer {
 
     public Answer() {}
 
-    public Answer(String text, Question question) {
-        this.text = text;
+    public Answer(String response, Question question) {
+        this.response = response;
         this.question = question;
     }
 
     public Long getId() { return id; }
     public void setId(Long id) { this.id = id; }
 
-    public String getText() { return text; }
-    public void setText(String text) { this.text = text; }
+    public String getResponse() { return response; }
+    public void setResponse(String response) { this.response = response; }
 
     public Question getQuestion() { return question; }
     public void setQuestion(Question question) { this.question = question; }
 }
+
