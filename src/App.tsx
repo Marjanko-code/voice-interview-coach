@@ -1,24 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import "./App.css";
+import QuestionForm from "./components/QuestionForm";
+import QuestionList from "./components/QuestionList";
 
 function App() {
+  const [refreshKey, setRefreshKey] = useState(0);
+
+  const handleUpdate = () => {
+    setRefreshKey(prev => prev + 1);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="min-h-screen bg-gray-100 p-8">
+      <h1 className="text-4xl font-bold text-center mb-8 text-blue-600">
+        Voice Interview Coach 🎤
+      </h1>
+
+      {/* Pridávanie otázok */}
+      <QuestionForm onSuccess={handleUpdate} />
+
+      {/* Zoznam otázok s odpoveďami */}
+      <QuestionList key={refreshKey} />
     </div>
   );
 }
