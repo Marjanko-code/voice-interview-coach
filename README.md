@@ -1,53 +1,87 @@
-# 🎤 Voice Interview Coach
+# Voice Interview Coach
 
-**AI-powered interview simulator** with voice input, real-time scoring, and an admin dashboard for managing questions and evaluating candidates.
+**Voice Interview Coach** is a React-based web application designed to help users practice voice-based interview questions. It allows users to respond to prompts with voice recordings, replay them, and track their progress.
 
----
+## 🎯 Purpose
 
-## 🚀 Overview
+To simulate realistic interview scenarios and improve user confidence, timing, and communication skills in voice interviews (especially for remote job interviews).
 
-This project helps users prepare for real job interviews through voice-based questions. It includes:
+## ✨ Features
 
-- 🎙️ Voice input using Web Speech API
-- 📊 Real-time scoring and evaluation
-- 🔐 Secure admin dashboard with JWT login
-- 📄 Exportable results (PDF)
-- 🌐 Separate admin subdomain for companies
+- 🎤 Voice recording using browser APIs  
+- ⏱️ Timed responses  
+- 🔁 Playback of recordings  
+- 📈 Basic scoring and progress tracking  
+- 💻 Responsive design for desktop and mobile
 
----
+## 🚀 Getting Started
 
-## ⚙️ Tech Stack
+### 1. Clone the repository
 
-**Frontend**
-- React + TypeScript
-- Tailwind CSS
-- Axios + Vite
+```bash
+git clone https://github.com/Marjanko-code/voice-interview-coach.git
+cd voice-interview-coach
+````
 
-**Backend**
-- Spring Boot 3 (Java 17)
-- Spring Security + JWT
-- Hibernate/JPA
-- H2 (development)
+### 2. Install dependencies
 
-**Admin Dashboard**
-- React + Tailwind (separate project)
-- JWT Auth + PDF export
+```bash
+npm install
+```
 
----
+### 3. Run the application locally
 
-## 🧪 Demo Credentials
+```bash
+npm run dev
+```
 
-| Role  | Username | Password  |
-|-------|----------|-----------|
-| Admin | admin    | admin123  |
-| User  | user     | password  |
+Then visit `http://localhost:5173` in your browser.
 
 ---
 
-## 🖼️ Screenshots
+## 🛠️ Technologies Used
 
-*(Add images to the GitHub repo later and link here)*
+* **React** – UI Framework
+* **Vite** – Development bundler
+* **HTML5 Audio API** – For voice recording/playback
+* **CSS / Tailwind** – Styling
+* **JavaScript (ES6+)**
 
 ---
 
-## 📁 Project Structure
+## 📂 Project Structure
+
+```
+voice-interview-coach/
+├── public/              # Static assets
+├── src/
+│   ├── components/      # React components
+│   ├── utils/           # Utility functions (e.g., audio helpers)
+│   └── App.jsx          # Main app file
+├── index.html
+├── package.json
+├── vite.config.js
+└── LICENSE
+```
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License** – see the [LICENSE](./LICENSE) file for details.
+
+---
+
+## 🙋 About the Author
+
+**GitHub:** [Marjanko-code](https://github.com/Marjanko-code)
+**Nickname:** `B4dB(_)G`
+Feel free to reach out for collaboration or feedback!
+
+```
+
+---
+
+Let me know when you're ready and I’ll prepare the `README.md` for the **Cognitive Gym** project too.
+```
+
