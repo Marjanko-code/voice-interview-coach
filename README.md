@@ -78,10 +78,3 @@ This project is licensed under the **MIT License** – see the [LICENSE](./LICEN
 **Nickname:** `B4dB(_)G`
 Feel free to reach out for collaboration or feedback!
 
-```
-
----
-
-Let me know when you're ready and I’ll prepare the `README.md` for the **Cognitive Gym** project too.
-```
-
